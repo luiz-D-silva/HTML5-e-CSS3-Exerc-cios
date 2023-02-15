@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos</h1>
+    <h2>Usando o Próprio Servidor</h2>
+    <p>Vamos inserir vídeos neste documento HTML, usando a tag &lt;vídeo&gt; e a tag &lt;source&gt; , iremos configurar usando os valores <strong>width</strong>(que indica a lagura da tela player), <strong>poster</strong>(que mostra a foto de capa do vídeo), <strong>controls</strong>(responsável por exibir os controles player), <strong>autoplay</strong>(inicia o vídeo assim que a página é carregada) e  <strong>loop</strong>(reinicia o vídeo assim que ele termina).</p>
+
+    <video width="560" controls autoplay loop>
+        <source src="midea/Video01.mp4" type="video/mp4">
+        <source src="midea/Video02.webm" type="video/webm">
+        <source src="midea/Video03.ogv" type="video/ogg">
+        <source src="midea/Video04.mkv" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+        </video>
+    <ul>
+        <li>Clic em <a href="midea/Video01.mp4" download="midea/Video01.mp4" type="application/mp4">Download</a> e baixe o vídeo parar reproduzir no player do seu dispositivo</li>
+    </ul>
+
+    <h2>Inserindo Vídeos do <a href="https://www.youtube.com/">Youtube</a></h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>Inserindo Vídeos do <a href="https://vimeo.com/">Vimeo</a></h2>
+    <iframe src="https://player.vimeo.com/video/718558198?h=4bb86245d6&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> 
+
+</body>
+</html>
