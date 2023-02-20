@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*em HTML é id = em CSS #
-em HTML é class = em CSS é . */
+/*em HTML é id = em CSS # (só pode um elemento, que também pode ser usado em documentos HTML diferentes, tipo outras páginas)
+em HTML é class = em CSS é . (pode conter vários elementos, inclusive um seletor pode pertencer a mais de uma clase ao mesmo tempo*/
 body {
     background-color: rgb(164, 236, 164);
 }
@@ -17,4 +17,21 @@ h1#principal {
 
 h2 {
     color: rgb(32, 60, 32);
+}
+
+.basico {
+    color: #3c805e;
+    font-weight: bolder;
+}
+
+.intermediario {
+    color: #80783c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque {
+    background-color: #e1f37d;
 }
