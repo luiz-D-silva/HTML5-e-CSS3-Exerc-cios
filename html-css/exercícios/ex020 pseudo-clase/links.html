@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        a {
+            color: crimson;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* A primeira linha de todo elemento <p>. */
+        p::first-line {
+        color: blue;
+        text-transform: uppercase;
+        }
+
+
+        a:visited {
+            color: rgb(133, 11, 35);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(43, 13, 194);
+        }
+
+        a::before {
+            content: '↱';
+        }
+
+        a::after {
+            content:'[link]↷';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(215, 70, 99);
+        }
+
+        .especial {
+            background-color: rgba(148, 96, 96, 0.206);
+        }
+
+        .especial::after {
+            content: '⇜';
+        }
+
+        .especial::before {
+            content: '⇝';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/luiz-D-silva" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target="_blank" class="especial">Curso em Vídeo Python</a></li>
+        <li><a href="https://www.youtube.com/watch?v=iT6E92Kt38o&list=PLKbIbjjmuksVzZBBBGW_Ey15zjQVNiwbj" target="_blank">Curso de Hardware</a></li>
+    </ul>
+    <h2>Parágrafo de teste</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis nihil dolores voluptatibus, magni quas ipsum cum consequuntur totam quis tempora eum libero enim sit, atque aspernatur quo officia aperiam.</p>
+</body>
+</html>
