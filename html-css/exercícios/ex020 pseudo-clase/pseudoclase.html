@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display:inline-block;
+            border: 2px  solid rgb(112, 91, 14);
+            text-align:center;
+            height: 200px;
+            width:200px;
+            border-radius:10px 30px;
+            box-shadow:3px 3px 15px rgb(105, 93, 51);
+            background-image: linear-gradient( to right, rgb(167, 124, 45),rgb(195, 166, 113))
+        }
+
+        div > p {
+            display:none;
+
+        }
+  
+        div:hover > p {
+            text-align: center;
+            display:block;
+            color: rgb(6, 4, 0);
+            background-color: rgb(255, 255, 255);
+        }
+
+        span {
+            background-color: rgb(250, 244, 237);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <span>Passe o mouse aqui&#x1F447</span>
+        <p>TEXTO EXCONDIDO</p>
+    </div>
+
+    <div id="d2">
+        <span>Passe o mouse aqui&#x1F447</span>
+        <p>TEXTO EXCONDIDO</p>
+    </div>
+
+    <div id="d3">
+        <span>Passe o mouse aqui &#x1F447</span>
+        <p>TEXTO EXCONDIDO</p>
+    </div>
+</body>
+</html>
