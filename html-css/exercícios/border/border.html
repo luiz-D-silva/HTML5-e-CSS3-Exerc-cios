@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Border</title>
+</head>
+<body>
+    <div class="container flex-item-1">
+        <h2>Tamanhos da borda</h2>
+    </div>
+    <div class="container flex bordaStyleColor">
+        <div style="border-width: 3px">pixels</div>
+        <div style="border-width: 0.2rem">rem</div>
+        <div style="border-width: 0.5em">em </div>
+        <div style="border-width: 1.2vw">vw</div>
+        <div style="border-width: 1.2vh;">vh</div>
+        <div style="border-width:thin">Thin</div>
+        <div style="border-width:medium">Medium</div>
+        <div style="border-width:thick">Thick</div>
+    </div>
+    <div class="container flex-item-1">
+        <h2>Estilos da borda</h2>
+    </div>
+    <div class="container flex bordaWidthColor">
+        <div style="border-style: solid">Solid</div>
+        <div style="border-style: none">None</div>
+        <div style="border-style: hidden">Hidden </div>
+        <div style="border-style: dashed">Dashed</div>
+        <div style="border-style: dotted">Dotted</div>
+        <div style="border-style: double">Double</div>
+        <div style="border-style: groove">Groove</div>
+        <div style="border-style: ridge">Ridge</div>
+        <div style="border-style: inset">Inset</div>
+        <div style="border-style: outset">Outset</div>        
+    </div>   
+    <div class="container flex-item-1">
+        <h2>Cores da borda</h2>
+    </div>
+    <div class="container flex bordaStyleWidth">
+        <div style="border-color: DarkGreen">Cor por nome: DarkGreen</div>
+        <div style="border-color: #3CA52C">Cor hexadecimal: #3CA52C</div>
+        <div style="border-color: rgb(60, 165, 44)">Cor RGB: rgb(60,165,44) </div>
+        <div style="border-color: rgba(60, 165, 44, 1)">Cor RGBA: rgba(60,165,44,1)</div>
+        <div style="border-color: hsl(112,58%,41%)">Cor HSL   : hsl(112,41%,52%)</div>
+        <div style="border-color: hsla(112, 58%, 41%, 0.5)">Cor HSLA: hsla(112,58,41,0.5)</div>
+     </div>  
+    <div class="container flex-item-1">
+        <h2>Exemplos de borda com imagem</h2>
+    </div>
+    <div class="container flex">
+        <div class="bordaImagem">
+            Borda 1 preenchida com imagem.
+        </div>
+        <div class="bordaImagem2">
+            Borda 2 preenchida com imagem.
+        </div>  
+        <div class="bordaImagem3">
+            Borda 3 preenchida com imagem.
+        </div>  
+        <div class="bordaImagem4">
+            Borda 4 preenchida com imagem.
+        </div>   
+        <div class="bordaImagem5">
+            Borda 5 preenchida com imagem.
+        </div>   
+        <div class="bordaImagem6">
+            Borda 6 preenchida com imagem.
+        </div>   
+    </div>
+     <style>
+        html{
+            font-size: 12px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            height: auto;
+            font-size: 10px;
+            text-align: center;
+        }
+        .flex-item-1{
+            flex: 1;
+            height: 20px;
+            margin:10px;
+        }
+        .container div{
+            width: 100px;
+            height: 80px;
+            flex-wrap: wrap;
+            margin:10px;
+         }
+        .bordaStyleColor div{
+            border-style:solid;
+            border-color: red;
+        }
+        .bordaWidthColor div{
+            border-width: 10px;
+            border-color: grey;
+            background-color: rgb(214, 212, 212);
+        }
+        .bordaStyleWidth div{
+            border-style:solid;
+            border-width: 10px;
+        }
+        .bordaImagem{
+            border: 20px solid transparent;
+            border-image:url(borda.png) 25% round;
+        }
+        .bordaImagem2{
+            border: 30px solid transparent;
+            border-image:url(borda.png) 50% round;           
+        }
+        .bordaImagem3{
+            border: 30px solid transparent;
+            border-image:url(borda.png) 40% stretch;           
+        }
+        .bordaImagem4{
+            border: 50px solid transparent;
+            border-image:url(borda.png) 100% round;           
+        }
+        .bordaImagem5{
+            border: 50px solid transparent;
+            border-image:url(borda.png) 25% stretch;           
+        }
+        .bordaImagem6{
+            border: 25px solid transparent;
+            border-image:url(borda.png) 40% repeat;           
+        }
+    </style>
+</body>
+</html>
